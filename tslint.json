@@ -1,0 +1,15 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "member-ordering": false,
+    "object-literal-sort-keys": false,
+    "comment-format": true,
+    "trailing-comma": true,
+    "ordered-imports": false,
+    "ban-comma-operator": false,
+    "quotemark": [true, "single"]
+  },
+  "linterOptions": {
+    "exclude": ["./node_modules/**"]
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./../../partials/common/meta') -%>
+    <title>Welcome to auto checkin tool</title>
+</head>
+<body class="container">
+
+<main>
+
+    <% if (error) { %>
+        <div class="alert alert-danger mt4">
+            <%= error %>
+        </div>
+    <% } %>
+
+    <div class="container">
+        <h3 class="row flex-center">Welcome hello to templating using EJS</h3>
+    </div>
+
+    <div class="container">
+        <form action="/user-confirm"
+              method="post">
+            <div class="row flex-middle">
+                <input class="input-block col-10"
+                       type="text"
+                       name="userToken"
+                       placeholder="Give me secret key to Insider Tool">
+                <button class="btn-secondary col-2"
+                        type="submit">
+                    Confirm
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+
+</body>
+</html>

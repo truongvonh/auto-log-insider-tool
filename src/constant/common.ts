@@ -1,0 +1,3 @@
+export const AUTHENTICATE = {
+  USER_TOKEN: 'INSIDER_USER_TOKEN',
+};
